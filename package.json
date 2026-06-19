@@ -51,8 +51,5 @@
     "@typescript-eslint/type-utils": "^8.54.0",
     "@typescript-eslint/utils": "^8.54.0",
     "@typescript-eslint/typescript-estree": "^8.54.0"
-  },
-  "workspaces": [
-    "."
-  ]
+  }
 }
