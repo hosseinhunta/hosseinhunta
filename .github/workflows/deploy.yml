@@ -1,6 +1,3 @@
-# Sample workflow for building and deploying a Next.js site to GitHub Pages
-# with pnpm support
-
 name: Deploy Next.js site to Pages
 
 on:
@@ -24,7 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 📦 مرحله‌ی تشخیص مدیر بسته (حالا شامل pnpm هم می‌شود)
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -38,61 +34,53 @@ jobs:
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
             exit 0
-          elif [ -f "${{ github.workspace }}/package-lock.json" ]; then
-            echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT
-            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
-            exit 0
-          elif [ -f "${{ github.workspace }}/package.json" ]; then
-            echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT
-            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
-            exit 0
           else
-            echo "Unable to determine package manager"
-            exit 1
+            echo "manager=npm" >> $GITHUB_OUTPUT
+            echo "command=ci" >> $GITHUB_OUTPUT
+            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
+            exit 0
           fi
 
-      # 📦 نصب pnpm (اگر مدیر بسته pnpm باشد)
       - name: Setup pnpm
         if: steps.detect-package-manager.outputs.manager == 'pnpm'
         uses: pnpm/action-setup@v4
         with:
-          version: 9  # یا نسخه‌ی دلخواه، می‌توانید از package.json هم بخواند
+          version: 9
 
-      # 🟢 تنظیم Node.js
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          # اینجا کش را برای pnpm هم پشتیبانی می‌کنیم
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          node-version: "22"
+          # کش به‌صورت دستی مدیریت می‌شود
 
-      # ⚙️ تنظیمات Pages (برای Next.js)
+      - name: Cache pnpm store
+        if: steps.detect-package-manager.outputs.manager == 'pnpm'
+        uses: actions/cache@v4
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
 
-      # 🔄 بازیابی کش (اختیاری، برای pnpm هم کار می‌کند)
-      - name: Restore cache
+      - name: Restore Next.js cache
         uses: actions/cache@v4
         with:
-          path: |
-            .next/cache
+          path: .next/cache
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml', '**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml', '**/package-lock.json', '**/yarn.lock') }}-
 
-      # 📥 نصب وابستگی‌ها
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
-      # 🏗️ ساخت پروژه
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
-      # 📤 آپلود خروجی
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
