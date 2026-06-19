@@ -6,8 +6,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isProd ? '/hosseinhunta' : '',
-  assetPrefix: isProd ? '/hosseinhunta/' : '',
+  // basePath: isProd ? '/hosseinhunta' : '',
+  // assetPrefix: isProd ? '/hosseinhunta/' : '',
 };
 
 module.exports = nextConfig;
