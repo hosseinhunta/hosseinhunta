@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://hosseinhunta.ir
+
+# Sitemaps
+Sitemap: https://hosseinhunta.ir/sitemap.xml

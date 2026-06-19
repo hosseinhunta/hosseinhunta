@@ -1,0 +1,154 @@
+{
+  "Projects": [
+    {
+      "show": true,
+      "title": "HuntFeed",
+      "desc": [
+        "HuntFeed یک کتابخانهٔ PHP آمادهٔ تولید (production-ready) و رویدادمحور برای مصرف، نرمال‌سازی و توزیع به‌روزرسانی‌های خوراک‌های RSS، Atom و WebSub با قابلیت اعلان‌های لحظه‌ای (push) است. این کتابخانه برای اگریگیتورهای خوراک، نرم‌افزارهای مطالعهٔ اخبار و برنامه‌های پایش محتوا ایده‌آل است.",
+        "این کتابخانه با بهره‌گیری از WebSub، تعداد درخواست‌های سنتی (Polling) را از ۹٬۶۰۰ به حدود ۱۰۰ درخواست در روز کاهش می‌دهد و تأخیر به‌روزرسانی را از ۱۵ دقیقه به کمتر از ۱ ثانیه می‌رساند. HuntFeed از فرمت‌های مختلفی مانند RSS، Atom، JSON Feed، RDF و GeoRSS پشتیبانی می‌کند.",
+        "امنیت در این کتابخانه با استفاده از HMAC-SHA1 برای تأیید اعلان‌ها،强制执行 SSL/TLS در محیط تولید، و جلوگیری از نشت داده‌ها تضمین شده است. این کتابخانه کاملاً با استانداردهای PSR-12 سازگار بوده و بیش از ۲۰۰۰ خط مستندات کامل دارد."
+      ],
+      "year": "2025",
+      "preview": "",
+      "code": "https://github.com/hosseinhunta/huntfeed",
+      "thumbnail": "/image/projects/huntfeed/huntfeed-openGraph.png",
+      "images": [
+        "/image/projects/huntfeed/huntfeed-openGraph.png",
+        "/image/projects/huntfeed/huntfeed-readme.jpg",
+        "/image/projects/huntfeed.png"
+      ],
+      "tech": ["PHP 8.1+", "cURL", "SimpleXML", "JSON", "WebSub"],
+      "slug": "huntfeed",
+      "category": [1]
+    },
+    {
+      "show": true,
+      "title": "PHP Telegram Bot SDK",
+      "desc": [
+        "یک SDK ماژولار و کامل برای تعامل با Telegram Bot API که با زبان PHP نوشته شده است. این کتابخانه به‌گونه‌ای طراحی شده که ساخت ربات‌های تلگرام را ساده، امن و لذت‌بخش کند.",
+        "این SDK در حال حاضر از **تمام متدهای Telegram Bot API** پشتیبانی می‌کند و برای استفاده در پروژه‌های واقعی بهینه‌سازی شده است. مستندات کامل این پروژه به دو زبان انگلیسی و فارسی در دسترس است.",
+        "ویژگی‌های در دست توسعه شامل مدیریت دستورات و رویدادها، بهینه‌سازی پردازشگر به‌روزرسانی‌ها، پشتیبانی از Middleware، ابزارهای پیشرفتهٔ اشکال‌زدایی، تست‌های جامع، محدودکنندهٔ نرخ درخواست (Rate Limiter) و مدیریت چندین ربات در یک نمونه است."
+      ],
+      "year": "2025",
+      "preview": "https://github.com/hosseinhunta/php-telegram-api-bot",
+      "code": "https://github.com/hosseinhunta/php-telegram-api-bot",
+      "thumbnail": "/image/projects/php-telegram-api-bot.png",
+      "images": [],
+      "tech": ["PHP 8.1+", "Telegram Bot API", "cURL"],
+      "slug": "php-telegram-bot-sdk",
+      "category": [1]
+    },
+    {
+      "show": true,
+      "title": "ArvanCloud Smart CDN",
+      "desc": [
+        "یک پلاگین هوشمند وردپرس که به‌صورت خودکار لینک‌های CDNهای خارجی مانند jsDelivr، unpkg و cdnjs را با CDN ایرانی ArvanCloud جایگزین می‌کند.",
+        "با توجه به شرایط اینترنت در ایران و قطعی‌های مکرر، بسیاری از سایت‌های وردپرس در بارگذاری فایل‌های JS و CSS از CDNهای خارجی با مشکل مواجه می‌شوند. خوشبختانه ArvanCloud مخزن بزرگی از کتابخانه‌های متن‌باز را در آدرس lib.arvancloud.ir آینه‌سازی کرده است. این پلاگین لینک‌های قدیمی را به مسیر صحیح در ArvanCloud هدایت می‌کند و مشکلات استایل‌ها، بارگذاری کند و خطاهای جاوااسکریپت را برطرف می‌سازد.",
+        "این پلاگین از بیش از ۵۰ کتابخانهٔ محبوب به‌صورت پیش‌فرض پشتیبانی می‌کند و قابلیت جستجوی خودکار کتابخانه‌های جدید، تصحیح خودکار مسیر فایل‌ها، مدیریت دستی مپینگ‌ها، و کش کردن نتایج جستجو برای بهبود عملکرد را دارد."
+      ],
+      "year": "2025",
+      "preview": "",
+      "code": "https://github.com/hosseinhunta/arvancloud-smart-cdn",
+      "thumbnail": "/image/projects/ascdn/wp.png",
+      "images": [
+        "/image/projects/ascdn/why.jpg",
+        "/image/projects/ascdn/wp.png",
+        "/image/projects/ascdn/def.jpg",
+        "/image/projects/ascdn/features.jpg",
+        "/image/projects/arvancloud-smart-cdn.png"
+      ],
+      "tech": ["PHP", "WordPress", "ArvanCloud CDN"],
+      "slug": "arvancloud-smart-cdn",
+      "category": [1]
+    },
+    {
+      "show": true,
+      "title": "Hiddify",
+      "desc": [
+        "Hiddify یک جعبه‌ابزار قدرتمند و حرفه‌ای برای مقابله با فیلترینگ است که به‌صورت یک پنل چندکاربره با نصب آسان و پشتیبانی از بیش از ۲۰ پروتکل مختلف برای دور زدن فیلترینگ طراحی شده است.",
+        "این پروژه به‌ویژه برای دور زدن فیلترینگ در کشورهای چین، روسیه و ایران بهینه‌سازی شده و توسط پروژهٔ Xray توصیه می‌شود. Hiddify جایگزین مناسبی برای پنل X-UI محسوب می‌شود.",
+        "ویژگی‌های برجستهٔ آن شامل نصب سریع، پروکسی هوشمند (Hiddify و Clash)، به‌روزرسانی خودکار، پشتیبان‌گیری خودکار (هر ۶ ساعت)، مدیریت کاربران، تعریف محدودیت زمان و ترافیک برای هر کاربر، صفحات اختصاصی برای کاربران، و نرم‌افزارهای کلاینت اختصاصی است."
+      ],
+      "year": "2025",
+      "preview": "",
+      "code": "https://github.com/HossienHunTa/hiddify",
+      "thumbnail": "/image/projects/hiddify/1.png",
+      "images": [
+        "/image/projects/hiddify/1.png",
+        "/image/projects/hiddify/2.png",
+        "/image/projects/hiddify/3.png",
+        "/image/projects/hiddify/4.png",
+        "/image/projects/hiddify.png"
+      ],
+      "tech": ["Xray", "V2Ray", "VLESS", "VMess", "Trojan", "WebSocket", "gRPC", "Ubuntu"],
+      "slug": "hiddify",
+      "category": [1]
+    },
+    {
+      "show": true,
+      "title": "Telegram for Android",
+      "desc": [
+        "مخزن رسمی سورس‌کد اپلیکیشن تلگرام برای اندروید. مشارکت در این پروژهٔ بزرگ و محبوب، فرصتی برای آشنایی با کدنویسی در مقیاس بالا، معماری اپلیکیشن‌های موبایل و فرآیندهای توسعهٔ نرم‌افزارهای پیام‌رسان است.",
+        "تلگرام یک اپلیکیشن پیام‌رسان با تمرکز بر سرعت و امنیت است که به‌صورت رایگان در دسترس قرار دارد. این مخزن شامل سورس‌کد رسمی اپلیکیشن تلگرام برای اندروید است که از گوگل‌پلی قابل دانلود می‌باشد."
+      ],
+      "year": "2025",
+      "preview": "",
+      "code": "https://github.com/HossienHunTa/Telegram",
+      "thumbnail": "/image/projects/telegram/3.jpg",
+      "images": [
+        "/image/projects/Telegram.png",
+        "/image/projects/telegram/1.jpg",
+        "/image/projects/telegram/2.jpg",
+        "/image/projects/telegram/4.jpg",
+        "/image/projects/telegram/5.jpg"
+      ],
+      "tech": ["Android", "Java", "Telegram API", "MTProto"],
+      "slug": "telegram-android",
+      "category": [1]
+    },
+    {
+      "show": true,
+      "title": "dotfiles",
+      "desc": [
+        "یک مجموعه‌ی کامل و خودکار برای راه‌اندازی محیط توسعه در ویندوز. این مخزن شامل تمام تنظیمات و پیکربندی‌های شخصی‌سازی‌شده برای PowerShell، Oh My Posh، پروفایل‌های VS Code، افزونه‌ها و فونت‌ها است که با یک اسکریپت ساده روی هر سیستم ویندوزی قابل پیاده‌سازی است.",
+        "بخش Developer Tools for Iran (DTI) این مخزن، مجموعه‌ای از آینه‌های محلی و ابزارهای کاربردی برای کمک به توسعه‌دهندگان ایرانی در شرایط قطعی اینترنت فراهم کرده است. این بخش شامل راهنماهای نصب و پیکربندی برای Docker، Linux، NPM، Python، Composer، NuGet، GitHub Container Registry، Maven و GitLab است.",
+        "این مخزن ابزارهای ضروری برای توسعه‌دهندگانی را فراهم می‌کند که به‌دنبال یک محیط کاری یکپارچه و مقاوم در برابر اختلالات اینترنتی هستند."
+      ],
+      "year": "2025",
+      "preview": "",
+      "code": "https://github.com/hosseinhunta/dotfiles",
+      "thumbnail": "/image/projects/dotfile/head.png",
+      "images": [
+        "/image/projects/dotfiles.png",
+        "/image/projects/dotfile/head.png",
+        "/image/projects/dotfile/docker.png",
+        "/image/projects/dotfile/DTI.png",
+        "/image/projects/dotfile/main.png"
+      ],
+      "tech": ["PowerShell 7", "Oh My Posh", "VS Code", "Nerd Fonts", "Docker", "Linux", "NPM", "Python", "PHP Composer"],
+      "slug": "dotfiles",
+      "category": [1]
+    },
+    {
+      "show": true,
+      "title": "HuntSNI",
+      "desc": [
+        "یک پنل وب محلی با یک فایل باینری که برای مقابله با DPI (Deep Packet Inspection) و کار با پروکسی‌های CDN-fronted طراحی شده است. این ابزار با هدف آموزش، تست و تحقیق توسعه یافته است.",
+        "EasySNI با اجرای یک فایل اجرایی، یک داشبورد تمیز در مرورگر باز می‌کند که شامل تونل SNI-spoofing، موتورهای xray/sing-box، اسکنرها، کتابخانهٔ تنظیمات، رلهٔ Google-fronted، و یک پروکسی domain-fronting در سمت کلاینت است. همهٔ این قابلیت‌ها در یک صفحه قرار دارند و نصب‌کننده یا سرویس‌های مخفی ندارند.",
+        "ویژگی‌های کلیدی آن شامل تونل SNI با قابلیت DPI-desync، پشتیبانی از XRay و sing-box به‌عنوان پروکسی SOCKS5 یا VPN TUN، domain-fronting کامل در سمت کلاینت، کتابخانهٔ تنظیمات با ویرایشگر ساختاریافته، اسکنرهای مختلف (SNI، Clean IP، CDN Edge)، و رلهٔ Google Tunnel از طریق Google Apps Script و Cloudflare Worker است."
+      ],
+      "year": "2025",
+      "preview": "",
+      "code": "https://github.com/hosseinhunta/huntsni",
+      "thumbnail": "/image/projects/sni/banner.svg",
+      "images": [
+        "/image/projects/sni/architecture.svg",
+        "/image/projects/sni/dashboard2.png",
+        "/image/projects/HuntSNI.png"
+      ],
+      "tech": ["Go", "XRay", "sing-box", "SNI", "Domain Fronting", "DPI"],
+      "slug": "huntsni",
+      "category": [1]
+    }
+  ]
+}
